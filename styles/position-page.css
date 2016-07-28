@@ -1,3 +1,8 @@
+.container{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
 nav{
 	background-color: #696969;
 	position: fixed;
@@ -14,11 +19,10 @@ nav{
     margin-top: 20px; 
     vertical-align: middle;
     border: 2px solid black;
-    float: left;
 }
 
 ul {
-	display: inline-block;
+	display: inline-flex;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
@@ -30,7 +34,7 @@ li{
 	display: inline-block;
 }
 
-li::after{
+li a::after{
 	content: '|';
 	margin-left: 5px;
 }
@@ -50,15 +54,34 @@ body{
 	background-image: url('http://www.bitewallpapers.com/space/space%20wallpapers/part%203/Twilight-space-planets-wallpaper-hd-desktop-background-screensaver.jpg');
 	background-size: cover;
 }
+main {
+  padding-top: 200px;
+  min-width: 1000px;
+}
 
-.container{
+.box{
+    position: relative;
 	width: 600px;
 	height:300px;
 	border: 10px green dotted;
 	margin: auto;
 }
 
+.cat,.dog{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
 
+.cat{
+    top: -90px;
+    left: -90px;
+}
+
+.dog{
+    bottom: -50px;
+    right: -100px;
+}
 
 
 
